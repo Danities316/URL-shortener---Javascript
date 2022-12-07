@@ -8,7 +8,14 @@ const shortenedLink = document.querySelector(".short-link")
 const handleSubmit = async () => {
     let url = document.querySelector("#URL")
     url = url.value
-    const response = await fetch("http://localhost:7777/link", {
+    // This is for the deployed website - for localhost is "http://localhost:7777/link"
+    const fetchEndpoint = `${process.env.PORT}/link`
+    
+    process.env.PORT || 7777 
+
+    // "https://urlshortener-6fvo.onrender.com/index_url.html"
+
+    const response = await fetch(fetchEndpoint, {
         headers: {
             "Content-Type": "application/json",
         },
