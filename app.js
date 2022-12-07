@@ -12,6 +12,7 @@ const _dirname = path.resolve()
 dotenv.config()
 
 const app = express()
+const PORT = process.env.PORT || 7777 
 
 app.use(express.json())
 app.use(express.urlencoded({
@@ -41,7 +42,7 @@ app.post("/link", validateURL, (req, res) =>{
         res.send("An error was encountred! Please try again.")
     }
     res.json({
-        message: `http://localhost:7777/${newURL.id}`, 
+        message: `http://localhost:${PORT}/${newURL.id}`, 
         type: "success"
     })
 })
@@ -58,7 +59,7 @@ app.get("/:id", async (req, res) => {
     res.redirect(originalLink.url);
 })
 
-const PORT = 7777 
+
 app.listen(PORT, async () =>{
     try {
        await mongoose.connect(process.env.MONGO_URI, (err) =>{
