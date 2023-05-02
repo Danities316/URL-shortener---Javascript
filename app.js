@@ -6,6 +6,8 @@ import { nanoid } from "nanoid";
 import urlExist from "url-exist"
 import URL from "./models/urlModel.js"
 import validateURL from "./middleware/validateURL.js"
+import cors from "cors";
+
 
 const _dirname = path.resolve()
 
@@ -14,6 +16,8 @@ dotenv.config()
 const app = express()
 const PORT = process.env.PORT || 7777 
 
+
+app.use(cors());
 app.use(express.json())
 app.use(express.urlencoded({
     extended: true
@@ -28,7 +32,7 @@ app.get("/", (req, res) => {
     res.sendfile(_dirname + "/public/index")
 });
 
-app.post("/link", validateURL, (req, res) =>{
+app.post("/link", validateURL, async (req, res) =>{
     let { url } = req.body
 
     //generate a unique id to identify the URL
@@ -37,7 +41,7 @@ app.post("/link", validateURL, (req, res) =>{
     let newURL = new URL({ url, id});
 
     try {
-        newURL.save();
+        await newURL.save();
     } catch (error) {
         res.send("An error was encountred! Please try again.")
     }
