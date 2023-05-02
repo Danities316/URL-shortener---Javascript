@@ -493,31 +493,46 @@ ul.btn li:last-child {
 
 .banner_main {
      background: #11aeef;
-     padding: 75px 0 90px 0;
+     padding: 15px 0 90px 0px;
+    
 }
 
 .text-bg {
-     text-align: left;
-     float: right;
+     text-align: center;
+     padding-top: 10px;
      width: 100%;
-     max-width: 431px;
+     max-width: 831px;
 }
 
 .text-bg h1 {
      color: #fff;
      padding-top: 50px;
-     font-size: 71px;
-     line-height: 85px;
-     padding-bottom: 25px;
+     font-size: 34px;
+     /* line-height: 85px; */
+     padding-bottom: 10px;
      font-weight: bold;
 }
+.bottom_form button {
+     font-size: 19px;
+     transition: ease-in all 0.5s;
+     background-color: #0192c8;
+     color: #fff;
+     padding: 11px 0px;
+     max-width: 175px;
+     width: 100%;
+     text-transform: uppercase;
+     border-radius: 10px;
+     border: inherit;
+     box-shadow: inherit;
+     justify-content: center;
+}
 
-.text-bg p {
+.text-bg-p {
      font-size: 17px;
      display: block;
      color: #fff;
      line-height: 25px;
-     padding-bottom: 50px;
+     margin-top: 20px;
      font-weight: 500;
 }
 
@@ -549,7 +564,7 @@ ul.btn li:last-child {
 }
 
 .carousel-caption {
-     position: inherit;
+     position: relative;
 }
 
 .carousel-control-next,
@@ -970,6 +985,7 @@ ul.social_icon li a i:hover {
      border-radius: 10px;
      border: inherit;
      box-shadow: inherit;
+     justify-content: center;
 }
 
 .sub_btn:hover {
@@ -1000,6 +1016,42 @@ ul.social_icon li a i:hover {
      color: #212120;
 }
 
+.error {
+     color: black;
+     margin: 10px 0;
+     font-weight: bold;
+   }
+   
+   .link-wrapper {
+     display: block;
+     flex-direction: column;
+     margin: 75px 0;
+     place-items: center;
+     opacity: 0;
+     transition: scale 1s ease-in-out;
+     scale: 0;
+   }
+   
+   .link-text {
+     font-weight: bold;
+     color: rgb(249, 241, 241);
+     margin: 5px 0;
+   }
+   
+   .short-link {
+     display: flex;
+     place-items: center;
+     place-content: center;
+     width: 300px;
+     height: 50px;
+     background-color: wheat;
+     border-radius: 4px;
+     padding: 10px;
+     margin: 10px;
+     color: black;
+     font-weight: bold;
+     box-shadow: 0 3px 6px #afada9ba;
+   }
 
 /** end footer **/
 

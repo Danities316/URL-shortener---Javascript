@@ -7,17 +7,12 @@ const shortenedLink = document.querySelector(".short-link")
 
 // const copyLink = document.querySelector(".short-link2")
 
-// dotenv.config()
-
 const handleSubmit = async () => {
     let url = document.querySelector("#URL").value
-    // url = url.value
-    // This is for the deployed website - for localhost is "http://localhost:7777/link"
-    // const fetchEndpoint = `${process.env.PORT}/link`
+ 
 
     const fetchEndpoint = `http://localhost:7777/link`
-    console.log(fetchEndpoint)
-    // process.env.PORT || 7777 
+ 
 
     // "https://urlshortener-6fvo.onrender.com/index_url.html"
 

@@ -65,7 +65,7 @@
                               <div class="logo">
                                  <a href="index.html">
                                     <!-- <img src="images/logo.png" alt="#" /> -->
-                                 <h2>DanitiesTech</h2>
+                                 <h2 class="down_btn">DanitiesTech</h2>
                                  </a>
                               </div>
                            </div>
@@ -73,7 +73,7 @@
                      </div>
                      <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
                         <ul class="btn">
-                           <li class="down_btn"><a href="#">Download</a></li>
+                           <li class="down_btn"><a href="#">Email Me</a></li>
                            <li><a href="#">Sign Up</a></li>
                            <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
                            <li><button type="button" id="sidebarCollapse">
@@ -90,39 +90,37 @@
          <!-- end header -->
          <!-- banner -->
          <div id="myCarousel" class="carousel slide banner_main" data-ride="carousel">
-            <ol class="carousel-indicators">
-               <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-               <li data-target="#myCarousel" data-slide-to="1"></li>
-               <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
             <div class="carousel-inner">
                <div class="carousel-item active">
                   <div class="container-fluid">
                      <div class="carousel-caption">
                         <div class="row">
-                           <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
-                              <div class="text-bg">
-                                 <h1>URL <br>Shortener<br> full control over your links</h1>
-                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </p>
-                                 <a class="read_more" href="./index_url.html">Shorten URL</a>
-                              </div>
-                           </div>
                            <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12">
-                              <div class="images_box">
-                                 <figure><img src="images/img2.png"></figure>
+                              <div class="text-bg">
+                                 <h1>Paste the URL to be shortened</h1>                                 
                               </div>
+                              <form class="bottom_form form" id="form">
+                                 <input class="enter" placeholder="Enter Your Link" type="link" name="URL" value="" id="URL">
+                                 <div class="error"></div>
+                                 <button type="submit" class="text-btn">Shorten URL</button>
+                              </form>
+                              <p class="text-bg-p">URL ShorTit is a free tool to shorten URLs and generate short links
+                                 Our URL shortener allows to create a shortened link making it easy to share</p>
                            </div>
+                         
                         </div>
+                        <div class="link-wrapper">
+                           <h3 class="link-text">Shorten Link</h3>
+                           <!-- <div class="short-link"></div> -->
+                           <p class="text-bg-p">Click on the link to copy></p>
+                           <input type="text" value="" class="short-link" />
+                       </div>
                      </div>
                   </div>
+                  
                </div>
             </div>
-            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-            <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
-            </a>
-            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-            </a>
+          
          </div>
          <!-- end banner -->
          <!-- about -->
@@ -136,8 +134,8 @@
                   </div>
                   <div class="col-md-7">
                      <div class="titlepage">
-                        <h2>About <span class="blu">Software</span></h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit </p>
+                        <h2>About <span class="blu">URL SHORTit</span></h2>
+                        <p>URL SHORTit allows to shorten long links from Instagram, Facebook, YouTube, Twitter, Linked In, WhatsApp, TikTok, blogs and sites. Just paste the long URL and click the Shorten URL button. On the next page, copy the shortened URL and share it on sites, chat and emails. After shortening the URL, check how many clicks it received.</p>
                         <a class="read_more">Read More</a>
                      </div>
                   </div>
@@ -153,7 +151,7 @@
                   <div class="col-md-7">
                      <div class="titlepage">
                         <h2>How it <span class="blu">Works</span></h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit </p>
+                        <p>Your shortened URLs can be used in publications, documents, advertisements, blogs, forums, instant messages, and other locations. Track statistics for your business and projects by monitoring the number of hits from your URL with our click counter.</p>
                         <a class="read_more">Read More</a>
                      </div>
                   </div>
@@ -165,47 +163,7 @@
                </div>
             </div>
          </div>
-         <!-- end work -->
-         <!-- request -->
-         <!-- <div id="contact" class="request">
-            <div class="container">
-               <div class="row">
-                  <div class="col-md-12">
-                     <div class="titlepage">
-                        <h2>Request <span class="white">A call Back</span></h2>
-                     </div>
-                  </div>
-               </div>
-               <div class="row">
-                  <div class="col-md-6">
-                     <form id="request" class="main_form">
-                        <div class="row">
-                           <div class="col-md-12 ">
-                              <input class="contactus" placeholder="Full Name" type="type" name="Full Name"> 
-                           </div>
-                           <div class="col-md-12">
-                              <input class="contactus" placeholder="Email" type="type" name="Email"> 
-                           </div>
-                           <div class="col-md-12">
-                              <input class="contactus" placeholder="Phone Number" type="type" name="Phone Number">                          
-                           </div>
-                           <div class="col-md-12">
-                              <textarea class="textarea" placeholder="Message" type="type" Message="Name">Message </textarea>
-                           </div>
-                           <div class="col-md-12">
-                              <button class="send_btn">Send</button>
-                           </div>
-                        </div>
-                     </form>
-                  </div>
-                  <div class="col-md-6">
-                     <div id="map"></div>
-                  </div>
-               </div>
-            </div>
-         </div> -->
-         <!-- end request -->
-         <!--  footer -->
+      
          <footer>
             <div class="footer">
                <div class="container">
@@ -216,9 +174,7 @@
                               <div class="address">
                                  <h3>Address </h3>
                               </div>
-                              <ul class="location_icon">
-                                 <li>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, </li>
-                              </ul>
+                                 <div class="email">luka316daniel@gmail.com</div>
                            </div>
                            <div class="col-md-4 col-sm-6">
                               <div class="address">
@@ -240,11 +196,8 @@
                                  <h3>Follow Us</h3>
                               </div>
                               <ul class="social_icon">
-                                 <li><a href="#">Facebook <i class="fa fa-facebook" aria-hidden="true"></i></a></li>
                                  <li><a href="#"> Twitter<i class="fa fa-twitter" aria-hidden="true"></i></a></li>
                                  <li><a href="#"> Linkedin<i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-                                 <li><a href="#"> Youtube<i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
-                                 <li><a href="#"> Instagram<i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                               </ul>
                            </div>
                            <div class="col-md-7 col-sm-6">
@@ -264,7 +217,7 @@
                   <div class="container">
                      <div class="row">
                         <div class="col-md-12">
-                           <p>Copyright 2019 All Right Reserved By <a href="https://html.design/"> Free  html Templates</a></p>
+                           <p>Copyright 2023 All Right Reserved By <a href="https://danitiestech.com/"> Danitiestech</a></p>
                         </div>
                      </div>
                   </div>
@@ -343,6 +296,6 @@
       <!-- google map js -->
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8eaHt9Dh5H57Zh0xVTqxVdBFCvFMqFjQ&callback=initMap"></script>
       <!-- end google map js -->
+      <script src="./index.js"></script>
    </body>
 </html>
-
