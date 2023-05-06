@@ -32,6 +32,7 @@ app.get("/", (req, res) => {
     res.sendfile(_dirname + "/public/index")
 });
 
+//validateURL check if the inputed string is a URL(it validates if a string is a URL)
 app.post("/link", validateURL, async (req, res) =>{
     let { url } = req.body
 
@@ -51,6 +52,7 @@ app.post("/link", validateURL, async (req, res) =>{
     })
 })
 
+// When you paste the link on the browser that is when this logic runs
 app.get("/:id", async (req, res) => {
     const id = req.params.id;
 

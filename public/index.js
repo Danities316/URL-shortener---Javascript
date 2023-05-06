@@ -8,7 +8,10 @@ const shortenedLink = document.querySelector(".short-link")
 // const copyLink = document.querySelector(".short-link2")
 
 const handleSubmit = async () => {
-    let url = document.querySelector("#URL").value
+    //selecting the id = URL inthe input form
+    let url = document.querySelector("#URL")
+    url = url.value
+  
  
 
     const fetchEndpoint = `http://localhost:7777/link`
@@ -23,7 +26,7 @@ const handleSubmit = async () => {
         method: "POST",
         body: JSON.stringify({ url })
     }).then((res) => res.json());
-
+// console.log(response)
     if(response.type == "failure"){
         formInput.style.border = "2px solid res";
         errorDiv.textContent = `${response.message}, please try another one!`
@@ -43,6 +46,7 @@ const clearFields = () => {
     url.addEventListener('focus', () =>{
         errorDiv.textContent = "";
     })
+    form.style.display = 'none';
 };
 
 form.addEventListener("submit", (event) => {
