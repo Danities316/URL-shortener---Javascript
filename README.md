@@ -27,7 +27,10 @@ My challenge was to build out this url shortener app in order to understand hash
 - Got to use the url-exist npm for the first, even though it is a straight forward module, it was tasking
 
 ## ScreenShot
-![home](https://user-images.githubusercontent.com/12422620/223815375-7c4e92d6-eeb9-4b90-8e70-ddbb8048bcff.jpg)
+![ss](https://user-images.githubusercontent.com/12422620/236650566-bafc3721-98aa-4a96-a1ef-b48cda89a5ea.png)
+
+![ss2](https://user-images.githubusercontent.com/12422620/236650578-7eb5d66d-3e51-4fcf-9c8f-90cf875dd241.png)
+
 
 
 ## ScreenShot Result
@@ -64,12 +67,10 @@ My challenge was to build out this url shortener app in order to understand hash
 
 ### Continued development
 - I would like to create modularity in the file structure -  following webpack standard
-- I would like to upgrade the books search and reading to individual user account, where they can store, read,shelve books
--
-### Useful resources
--  https://www.youtube.com/watch?v=bsZKDIaij-A
-- https://www.digitalocean.com/community/tutorials/how-to-implement-caching-in-node-js-using-redis 
-- https://developers.google.com/books/docs/v1/using 
+- I would like to create user registration/login
+- track url clicks etc
+- add url customization
+- Add geotargeting and device targeting
 
 ### Author
 - [Danities Ichaba - Linkdin](https://www.linkedin.com/in/danities-ichaba-50a806171?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bww5hjSUjT%2BCSaJSXADphiQ%3D%3D)
