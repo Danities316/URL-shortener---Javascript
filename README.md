@@ -36,7 +36,7 @@ My challenge was to build out this url shortener app in order to understand hash
 
 ### Links
 
-- Solution URL: 
+- Solution URL: http://localhost:7777/6Qa8WQHM
 - Live Site URL: https://urlshortener-6fvo.onrender.com
 
 ## My process
