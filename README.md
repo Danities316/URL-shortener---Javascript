@@ -29,12 +29,9 @@ My challenge was to build out this url shortener app in order to understand hash
 ## ScreenShot
 ![ss](https://user-images.githubusercontent.com/12422620/236650566-bafc3721-98aa-4a96-a1ef-b48cda89a5ea.png)
 
-![ss2](https://user-images.githubusercontent.com/12422620/236650578-7eb5d66d-3e51-4fcf-9c8f-90cf875dd241.png)
-
-
-
 ## ScreenShot Result
 
+![ss2](https://user-images.githubusercontent.com/12422620/236650578-7eb5d66d-3e51-4fcf-9c8f-90cf875dd241.png)
 
 
 ### Links
@@ -46,9 +43,15 @@ My challenge was to build out this url shortener app in order to understand hash
 - Create a backend where i create logic for the API
 - I used mongoose for the database and model
 - use url-exist to validate url
-- I simply fetch google book API data using **Axios**, creat an in-memory key-value pairs to save it on the local browser for faster loading.
-- Deploying the project to Heroku - I have to understand the steps and process ofhosting an in-memory database online
-
+- I simply 
+   - create API endpoint to validate url(just to be sure it is URL)
+   -  then create an ID for the particular url 
+   -  get the url pasted on the input 
+   -  save the url and the ID on mongoDB
+   -  return the url ID
+   -  create another endpoint that required the url and the id
+   -  using the url and the fetch data(stored url) from the mongoDB
+   -  Load the link on the browser 
 ### Built with
 - Semantic HTML5 markup
 - Boostrap 5
