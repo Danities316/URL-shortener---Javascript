@@ -12,13 +12,9 @@ const handleSubmit = async () => {
     let url = document.querySelector("#URL")
     url = url.value
   
-<<<<<<< HEAD
- const fetchEndpoint = `http://localhost:7777/link` || process.env.PORT
-=======
  
 
-    const fetchEndpoint = `http://localhost:7777/link` || process.env.PORT
->>>>>>> 0f6f546... refactor the mongo db links
+    const fetchEndpoint = `http://localhost:7777/link`
  
 
     // "https://urlshortener-6fvo.onrender.com/index_url.html"
@@ -32,7 +28,7 @@ const handleSubmit = async () => {
     }).then((res) => res.json());
 // console.log(response)
     if(response.type == "failure"){
-        formInput.style.border = "2px solid red";
+        formInput.style.border = "2px solid res";
         errorDiv.textContent = `${response.message}, please try another one!`
     }
     if(response.type == "success"){
