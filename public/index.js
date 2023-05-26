@@ -14,7 +14,7 @@ const handleSubmit = async () => {
   
  
 
-    const fetchEndpoint = `http://localhost:7777/link`
+    const fetchEndpoint = `http://localhost:7777/link` || process.env.PORT
  
 
     // "https://urlshortener-6fvo.onrender.com/index_url.html"
@@ -28,7 +28,7 @@ const handleSubmit = async () => {
     }).then((res) => res.json());
 // console.log(response)
     if(response.type == "failure"){
-        formInput.style.border = "2px solid res";
+        formInput.style.border = "2px solid red";
         errorDiv.textContent = `${response.message}, please try another one!`
     }
     if(response.type == "success"){
