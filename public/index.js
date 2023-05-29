@@ -12,23 +12,9 @@ const handleSubmit = async () => {
     let url = document.querySelector("#URL")
     url = url.value
   
-<<<<<<< HEAD
 
- const fetchEndpoint = `http://localhost:7777/link` || process.env.PORT
 
- 
-
-    const fetchEndpoint = `http://localhost:7777/link` || process.env.PORT
-=======
-<<<<<<< HEAD
- 
-
-    const fetchEndpoint = `http://localhost:7777/link` || process.env.PORT
-=======
- const fetchEndpoint = `http://localhost:7777/link` || process.env.PORT
->>>>>>> cabbf9547f451a2d71b0cac22aa70d2f50e43bf0
->>>>>>> ad2ee3189a953cebb640562f041d13e5556bbdda
- 
+ const fetchEndpoint = `http://localhost:7777/link` || process.env.PORT 
 
     // "https://urlshortener-6fvo.onrender.com/index_url.html"
 
