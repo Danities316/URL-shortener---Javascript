@@ -5,16 +5,17 @@ const errorDiv = document.querySelector(".error");
 const linkWrapper = document.querySelector(".link-wrapper")
 const shortenedLink = document.querySelector(".short-link")
 
+
 // const copyLink = document.querySelector(".short-link2")
 
 const handleSubmit = async () => {
     //selecting the id = URL inthe input form
-    let url = document.querySelector("#URL")
+    let url = document.querySelector("#url")
     url = url.value
   
 
 
- const fetchEndpoint = `http://localhost:7777/link` || process.env.PORT 
+ const fetchEndpoint = `http://localhost:7777/link` || process.env.PORT
 
     // "https://urlshortener-6fvo.onrender.com/index_url.html"
 
@@ -25,7 +26,7 @@ const handleSubmit = async () => {
         method: "POST",
         body: JSON.stringify({ url })
     }).then((res) => res.json());
-// console.log(response)
+console.log(response)
     if(response.type == "failure"){
         formInput.style.border = "2px solid red";
         errorDiv.textContent = `${response.message}, please try another one!`

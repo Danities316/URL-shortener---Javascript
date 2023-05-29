@@ -35,7 +35,7 @@ app.get("/", (req, res) => {
 //validateURL check if the inputed string is a URL(it validates if a string is a URL)
 app.post("/link", validateURL, async (req, res) =>{
     let { url } = req.body
-
+    // console.log(url)
     //generate a unique id to identify the URL
     let id = nanoid(8);
 
