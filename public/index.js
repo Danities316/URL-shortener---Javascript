@@ -12,13 +12,12 @@ const handleSubmit = async () => {
     let url = document.querySelector("#URL")
     url = url.value
   
-<<<<<<< HEAD
+
  const fetchEndpoint = `http://localhost:7777/link` || process.env.PORT
-=======
+
  
 
     const fetchEndpoint = `http://localhost:7777/link` || process.env.PORT
->>>>>>> 0f6f546... refactor the mongo db links
  
 
     // "https://urlshortener-6fvo.onrender.com/index_url.html"
