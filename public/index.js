@@ -15,7 +15,7 @@ const handleSubmit = async () => {
   
 
 
- const fetchEndpoint = `http://localhost:7777/link` || process.env.PORT
+ const fetchEndpoint = `http://localhost:7777/link` || process.env.PORT + '/link'
 
     // "https://urlshortener-6fvo.onrender.com/index_url.html"
 
