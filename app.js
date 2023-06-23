@@ -14,7 +14,7 @@ const _dirname = path.resolve()
 dotenv.config()
 
 const app = express()
-const PORT = process.env.PORT || 7777 
+const PORT = process.env.PORT || 10000 
 
 
 app.use(cors());
