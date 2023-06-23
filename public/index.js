@@ -23,10 +23,13 @@ const handleSubmit = async () => {
         headers: {
             "Content-Type": "application/json",
         },
+        mode: 'no-cors',
         method: "POST",
         body: JSON.stringify({ url })
-    }).then((res) => res.json());
-console.log(response)
+    }).then((res) => {
+        return res.json()
+    });
+    console.log(response.type)
     if(response.type == "failure"){
         formInput.style.border = "2px solid red";
         errorDiv.textContent = `${response.message}, please try another one!`
