@@ -15,7 +15,7 @@ const handleSubmit = async () => {
   
 
 
- const fetchEndpoint = `http://localhost:10000/link` || process.env.PORT + '/link'
+ const fetchEndpoint =  process.env.PORT + '/link'
 
     // "https://urlshortener-6fvo.onrender.com/index_url.html"
 
@@ -23,7 +23,6 @@ const handleSubmit = async () => {
         headers: {
             "Content-Type": "application/json",
         },
-        mode: 'no-cors',
         method: "POST",
         body: JSON.stringify({ url })
     }).then((res) => {
