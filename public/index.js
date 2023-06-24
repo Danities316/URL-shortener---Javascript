@@ -15,7 +15,7 @@ const handleSubmit = async () => {
   
 
 
- const fetchEndpoint = `http://localhost:7777/link` || process.env.PORT + '/link'
+ const fetchEndpoint = `http://localhost:10000/link` || process.env.PORT + '/link'
 
     // "https://urlshortener-6fvo.onrender.com/index_url.html"
 
@@ -28,6 +28,8 @@ const handleSubmit = async () => {
         body: JSON.stringify({ url })
     }).then((res) => {
         return res.json()
+    }).catch(rejected => {
+        console.log(rejected);
     });
     console.log(response.type)
     if(response.type == "failure"){
