@@ -14,7 +14,7 @@ const _dirname = path.resolve()
 dotenv.config()
 
 const app = express()
-const PORT = process.env.PORT || 7777 
+const PORT = process.env.PORT || 10000 
 
 
 app.use(cors());
@@ -64,18 +64,30 @@ app.get("/:id", async (req, res) => {
     }
     res.redirect(originalLink.url);
 })
+<<<<<<< HEAD
 
+=======
+// connecting to the db
+>>>>>>> e0fbd7b86ed5302e095f4178c9fcdb6be5d4027a
 mongoose.connect(process.env.MONGO_URI, (err) =>{
     if(err){
         console.log(err);
     }
     console.log("Database coneected successfully...")
+<<<<<<< HEAD
 })
 
 
 app.listen(PORT, async () =>{
     try {
         console.log(`App is listening at port ${PORT}` )
+=======
+});
+
+app.listen(PORT, async () =>{
+    try {
+    console.log(`App is listening at port ${PORT}` )
+>>>>>>> e0fbd7b86ed5302e095f4178c9fcdb6be5d4027a
     } catch (error) {
         if(error){
             console.error(error)
