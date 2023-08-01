@@ -65,15 +65,16 @@ app.get("/:id", async (req, res) => {
     res.redirect(originalLink.url);
 })
 
+mongoose.connect(process.env.MONGO_URI, (err) =>{
+    if(err){
+        console.log(err);
+    }
+    console.log("Database coneected successfully...")
+})
+
 
 app.listen(PORT, async () =>{
     try {
-       await mongoose.connect(process.env.MONGO_URI, (err) =>{
-            if(err){
-                console.log(err);
-            }
-            console.log("Database coneected successfully...")
-        })
         console.log(`App is listening at port ${PORT}` )
     } catch (error) {
         if(error){
@@ -83,3 +84,4 @@ app.listen(PORT, async () =>{
     
 })
 
+// https://urlshortener-6fvo.onrender.com

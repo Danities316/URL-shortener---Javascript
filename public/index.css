@@ -1,111 +1,130 @@
 body {
-    background-color: #5e78e0;
-    color: white;
-    padding: 0;
-    margin: 0;
-    font-family: "Roboto", sans-serif;
-  }
-  
+  background-color: #5e78e0;
+  color: white;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  width: 400px;
+  height: 450px;
+  border-radius: 24px;
+  background-color: #190074;
+  padding: 10px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
   .container {
-    display: flex;
-    flex-direction: column;
-    place-items: center;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    left: 50%;
-    top: 50%;
-    width: 400px;
-    height: 450px;
-    border-radius: 24px;
-    background-color: #190074;
-    padding: 10px;
+    width: 90%;
+    /* Adjust the width for smaller screens */
+    height: auto;
+    /* Remove fixed height to accommodate content */
   }
-  
-  .header {
-    font-size: 36px;
-    font-weight: bold;
-  }
-  
-  .btn {
-    height: 35px;
-    width: 120px;
-    border-radius: 4px;
-    background-image: linear-gradient(to bottom, rgb(2, 0, 34), rgb(204, 198, 224));
-    border: none;
-    font-weight: 400;
-    font-size: 20px;
-    outline: none;
-    color: rgb(248, 245, 245);
-    box-shadow: 0 3px 6px #f8f8f5;
-  }
-  
-  .btn:hover {
-    cursor: pointer;
-  }
-  
-  .form {
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    place-items: center;
-  }
-  
+}
+
+.header {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.btn {
+  height: 35px;
+  width: 120px;
+  border-radius: 4px;
+  background-image: linear-gradient(to bottom, rgb(2, 0, 34), rgb(204, 198, 224));
+  border: none;
+  font-weight: 400;
+  font-size: 20px;
+  outline: none;
+  color: rgb(248, 245, 245);
+  box-shadow: 0 3px 6px #f8f8f5;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.form {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  place-items: center;
+}
+
+input {
+  height: 35px;
+  width: 320px;
+  border-radius: 4px;
+  background-color: #fff;
+  color: black;
+  outline: none;
+  border: none;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
   input {
-    height: 35px;
-    width: 320px;
-    border-radius: 4px;
-    background-color: #fff;
-    color: black;
-    outline: none;
-    border: none;
-    margin: 10px 0;
-    padding: 10px;
+    width: 90%;
+    /* Adjust the width for smaller screens */
   }
-  
-  input:focus {
-    border: 2px solid rgb(243 85 144);
-    outline: none;
-  }
-  .error {
-    color: black;
-    margin: 10px 0;
-    font-weight: bold;
-  }
-  
-  .link-wrapper {
-    display: none;
-    flex-direction: column;
-    margin: 75px 0;
-    place-items: center;
-    opacity: 0;
-    transition: scale 1s ease-in-out;
-    scale: 0;
-  }
-  
-  .link-text {
-    font-weight: bold;
-    color: black;
-    margin: 5px 0;
-  }
-  
-  .short-link {
-    display: flex;
-    place-items: center;
-    place-content: center;
-    width: 300px;
-    height: 50px;
-    background-color: wheat;
-    border-radius: 4px;
-    padding: 10px;
-    margin: 10px;
-    color: black;
-    font-weight: bold;
-    box-shadow: 0 3px 6px #afada9ba;
-  }
-  
-  .loader {
-    width: 40px;
-    height: 40px;
-  }
+}
+
+input:focus {
+  border: 2px solid rgb(243 85 144);
+  outline: none;
+}
+
+.error {
+  color: black;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.link-wrapper {
+  display: none;
+  flex-direction: column;
+  margin: 75px 0;
+  place-items: center;
+  opacity: 0;
+  transition: scale 1s ease-in-out;
+  scale: 0;
+}
+
+.link-text {
+  font-weight: bold;
+  color: black;
+  margin: 5px 0;
+}
+
+.short-link {
+  display: flex;
+  place-items: center;
+  place-content: center;
+  width: 300px;
+  height: 50px;
+  background-color: wheat;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 10px;
+  color: black;
+  font-weight: bold;
+  box-shadow: 0 3px 6px #afada9ba;
+}
+
+.loader {
+  width: 40px;
+  height: 40px;
+}
