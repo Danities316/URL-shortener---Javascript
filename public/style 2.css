@@ -1058,6 +1058,84 @@ ul.social_icon li a i:hover {
      font-weight: bold;
      box-shadow: 0 3px 6px #afada9ba;
    }
-
+.form_mobile{
+     display: none;
+}
 /** end footer **/
+
+
+/* Styles for mobile phones in portrait mode (up to 767px wide) */
+@media (max-width: 767px) {
+     body {
+               overflow-x: hidden;
+     
+          }
+.text-bg {
+          /* text-align: center; */
+          padding-top: 10px;
+          width: 100%;
+          margin-left: -15px;
+          /* word-spacing: -0px; */
+          /* max-width: 1131px; */
+     }
+
+
+     .text-bg h1 {
+          /* color: rgb(208, 13, 13); */
+          padding-top: 50px;
+          font-size: 184px;
+          /* line-height: 85px; */
+          padding-bottom: 10px;
+          font-weight: bold;
+     }
+          .banner_main {
+               background: #11aeef;
+               padding: 5px;
+               width: 100vw;
+              
+     
+          }
+                    .form_mobile {
+                         color: red;
+                         display: flex;
+          
+                    }
+     
+                    .form_big-screen {
+                         display: none;
+                    }
+                    .form_mobile .bottom_form .enter {
+               border: inherit;
+               padding: 0 65px 0 85px;
+               width: 145%;
+               height: 63px;
+               background: #fff;
+               color: #828282;
+               font-size: 14px;
+               /* text-align: center; */
+               border-radius: 15px;
+               margin-left: 10px;
+               /* margin-right: 10px; */
+               margin-bottom: 25px;
+          }
+          .form_mobile .text-btn{
+               margin: auto;
+          }
+}
+
+/* Styles for mobile phones in landscape mode (between 768px and 991px wide) */
+@media (min-width: 768px) and (max-width: 991px) {
+     /* Your CSS styles for mobile phones in landscape mode */
+     
+}
+
+/* Styles for tablets in portrait mode (between 768px and 991px wide) */
+@media (min-width: 768px) and (max-width: 991px) {
+     /* Your CSS styles for tablets in portrait mode */
+}
+
+/* Styles for tablets in landscape mode (between 992px and 1199px wide) */
+@media (min-width: 992px) and (max-width: 1199px) {
+     /* Your CSS styles for tablets in landscape mode */
+}
 

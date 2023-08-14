@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>urlshortener</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fav.ico" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+   </head>
+   <!-- body -->
+   <body class="main-layout">
+      <!-- loader  -->
+      <div class="loader_bg">
+         <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+      </div>
+      <!-- end loader -->
+      <div class="wrapper">
+      <!-- end loader -->
+      <div class="sideba">
+         <!-- Sidebar  -->
+         <nav id="sidebar">
+            <div id="dismiss">
+               <i class="fa fa-arrow-left"></i>
+            </div>
+            <ul class="list-unstyled components">
+               <li class="active"> <a href="#">Home</a> </li>
+               <li><a href="#about">About </a> </li>
+               <li><a href="#work">Features</a> </li>
+               <li><a href="#contact">Price </a> </li>
+            </ul>
+         </nav>
+      </div>
+      <div id="content">
+         <!-- header -->
+         <header>
+            <!-- header inner -->
+            <div class="header">
+               <div class="container-fluid">
+                  <div class="row">
+                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                        <div class="full">
+                           <div class="center-desk">
+                              <div class="logo">
+                                 <a href="index.html">
+                                    <!-- <img src="images/logo.png" alt="#" /> -->
+                                 <h2 class="down_btn">DanitiesTech</h2>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                        <ul class="btn">
+                           <li class="down_btn"><a href="mailto:luka316daniel@gmail.com ? subject = Mail from URL Shortener">Email Me</a></li>                     
+                           <li><button type="button" id="sidebarCollapse">
+                              <img src="images/menu_icon.png" alt="#" />
+                              </button>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </header>
+         <!-- end header inner -->
+         <!-- end header -->
+         <!-- banner -->
+         <div id="myCarousel" class="carousel slide banner_main" data-ride="carousel">
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <div class="container-fluid">
+                     <div class="carousel-caption">
+                        <div class="row form_big-screen">
+                           <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12">
+                              <div class="text-bg">
+                                 <h1 class="titleText">Paste Your Link to be shortened</h1>                                 
+                              </div>
+                              <form class="bottom_form form" id="form">
+                                 <input class="enter" placeholder="Enter Your Link" type="link" name="url" value="" id="url">
+                                 <div class="error"></div>
+                                 <button type="submit" class="text-btn">Shorten My Link</button>
+                              </form>
+                              <p class="text-bg-p">Link ShorTit is a free tool to shorten Links and generate short links
+                                 Our LINK shortener allows to create a shortened link making it easy to share</p>
+                                 <div class="link-wrapper">
+                                    <!-- loader  -->
+                                        <div class="loader_bg">
+                                        <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+                                                   </div>
+                                    <h3 class="link-text">Shorten Link</h3>
+                                    <!-- <div class="short-link"></div> -->
+                                    <p class="text-bg-p">Your Link has been successfully shortened. Click on the link to copy></p>
+                                    <input type="text" value="" class="short-link" />
+                                    <div class="error"></div>
+                                </div>
+                           </div>
+                        </div>
+   <div class="row form_mobile">
+       <div class="text-bg">
+                                 <h1 class="titleText">Paste your Link to be shortened</h1>                                 
+                              </div>
+         <form class="bottom_form form" id="form">
+            <input class="enter" placeholder="Enter Your Link" type="link" name="url" value="" id="url">
+            <div class="error"></div>
+            <button type="submit" class="text-btn">Shorten Link</button>
+         </form>
+         <p class="text-bg-p">Link ShorTit is a free tool to shorten URLs and generate short links
+            Our URL shortener allows to create a shortened link making it easy to share</p>
+         <div class="link-wrapper">
+            <!-- loader  -->
+            <div class="loader_bg">
+               <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+            </div>
+            <h3 class="link-text">Shorten Link</h3>
+            <!-- <div class="short-link"></div> -->
+            <p class="text-bg-p">Your link has been successfully shortened. Click on the link to copy></p>
+            <input type="text" value="" class="short-link" />
+            <div class="error"></div>
+      </div>
+   </div>
+
+
+
+
+
+
+
+
+                       
+                     </div>
+                  </div>
+                  
+               </div>
+            </div>
+          
+         </div>
+         <!-- end banner -->
+         <!-- about -->
+         <div id="about"  class="about">
+            <div class="container-fluid">
+               <div class="row d_flex">
+                  <div class="col-md-5">
+                     <div class="about_img">
+                        <figure><img src="images/about_img.jpg" alt="#"/></figure>
+                     </div>
+                  </div>
+                  <div class="col-md-7">
+                     <div class="titlepage">
+                        <h2>About <span class="blu">Links SHORTit</span></h2>
+                        <p>URL SHORTit allows to shorten long links from Instagram, Facebook, YouTube, Twitter, Linked In, WhatsApp, TikTok, blogs and sites. Just paste the long URL and click the Shorten URL button. On the next page, copy the shortened URL and share it on sites, chat and emails. After shortening the URL, check how many clicks it received.</p>
+                        <a class="read_more">Read More</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- end about -->
+        
+         <!-- work -->
+         <div id="work"  class="work">
+            <div class="container-fluid">
+               <div class="row d_flex">
+                  <div class="col-md-7">
+                     <div class="titlepage">
+                        <h2>How it <span class="blu">Works</span></h2>
+                        <p>Your shortened linkss can be used in publications, documents, advertisements, blogs, forums, instant messages, and other locations. Track statistics for your business and projects by monitoring the number of hits from your URL with our click counter.</p>
+                        <a class="read_more">Read More</a>
+                     </div>
+                  </div>
+                  <div class="col-md-5">
+                     <div class="work_img">
+                        <figure><img src="images/work_img.jpg" alt="#"/></figure>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      
+         <footer>
+            <div class="footer">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                        <div class="row">
+                           <div class="col-md-8 col-sm-6">
+                              <div class="address">
+                                 <h3>Address </h3>
+                              </div>
+                                 <div class="email">luka316daniel@gmail.com</div>
+                           </div>
+                           <div class="col-md-4 col-sm-6">
+                              <div class="address">
+                                 <h3>Links</h3>
+                                 <ul class="Menu_footer">
+                                    <li class="active"> <a href="#">Home</a> </li>
+                                    <li><a href="#about">About </a> </li>
+                                    <li><a href="#work">Work</a> </li>
+                                    <li><a href="#contact">Contact </a> </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                        <div class="row">
+                           <div class="col-md-5 col-sm-6">
+                              <div class="address">
+                                 <h3>Follow Us</h3>
+                              </div>
+                              <ul class="social_icon">
+                                 <li><a href="#"> Twitter<i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                 <li><a href="#"> Linkedin<i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                              </ul>
+                           </div>
+                           <div class="col-md-7 col-sm-6">
+                              <div class="address">
+                                 <h3>Newsletter </h3>
+                              </div>
+                              <form class="bottom_form">
+                                 <input class="enter" placeholder="Enter Your Email" type="text" name="Enter Your Email">
+                                 <button class="sub_btn">subscribe</button>
+                              </form>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="copyright">
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-md-12">
+                           <p>Copyright 2023 All Right Reserved By <a href="https://danitiestech.com/"> Danitiestech</a></p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </footer>
+         <!-- end footer -->
+      </div>
+      <div class="overlay"></div>
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+      <script type="text/javascript">
+         $(document).ready(function() {
+             $("#sidebar").mCustomScrollbar({
+                 theme: "minimal"
+             });
+         
+             $('#dismiss, .overlay').on('click', function() {
+                 $('#sidebar').removeClass('active');
+                 $('.overlay').removeClass('active');
+             });
+         
+             $('#sidebarCollapse').on('click', function() {
+                 $('#sidebar').addClass('active');
+                 $('.overlay').addClass('active');
+                 $('.collapse.in').toggleClass('in');
+                 $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+             });
+         });
+      </script>
+      <script>
+         $(document).ready(function() {
+             $(".fancybox").fancybox({
+                 openEffect: "none",
+                 closeEffect: "none"
+             });
+         
+             $(".zoom").hover(function() {
+         
+                 $(this).addClass('transition');
+             }, function() {
+         
+                 $(this).removeClass('transition');
+             });
+         });
+      </script>
+      <script>
+         // This example adds a marker to indicate the position of Bondi Beach in Sydney,
+         // Australia.
+         function initMap() {
+           var map = new google.maps.Map(document.getElementById('map'), {
+             zoom: 11,
+             center: {
+               lat: 40.645037,
+               lng: -73.880224
+             },
+           });
+         
+           var image = 'images/maps-and-flags.png';
+           var beachMarker = new google.maps.Marker({
+             position: {
+               lat: 40.645037,
+               lng: -73.880224
+             },
+             map: map,
+             icon: image
+           });
+         }
+      </script>
+      <!-- google map js -->
+      <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8eaHt9Dh5H57Zh0xVTqxVdBFCvFMqFjQ&callback=initMap"></script> -->
+      <!-- end google map js -->
+      <script src="./index.js"></script>
+   </body>
+</html>

@@ -1,304 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <!-- basic -->
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <!-- mobile metas -->
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-      <!-- site metas -->
-      <title>urlshortener</title>
-      <meta name="keywords" content="">
-      <meta name="description" content="">
-      <meta name="author" content="">
-      <!-- bootstrap css -->
-      <link rel="stylesheet" href="css/bootstrap.min.css">
-      <!-- style css -->
-      <link rel="stylesheet" href="css/style.css">
-      <!-- Responsive-->
-      <link rel="stylesheet" href="css/responsive.css">
-      <!-- fevicon -->
-      <link rel="icon" href="images/fevicon.png" type="image/gif" />
-      <!-- Scrollbar Custom CSS -->
-      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
-      <!-- Tweaks for older IEs-->
-      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
-      <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
-   </head>
-   <!-- body -->
-   <body class="main-layout">
-      <!-- loader  -->
-      <div class="loader_bg">
-         <div class="loader"><img src="images/loading.gif" alt="#" /></div>
-      </div>
-      <!-- end loader -->
-      <div class="wrapper">
-      <!-- end loader -->
-      <div class="sidebar">
-         <!-- Sidebar  -->
-         <nav id="sidebar">
-            <div id="dismiss">
-               <i class="fa fa-arrow-left"></i>
-            </div>
-            <ul class="list-unstyled components">
-               <li class="active"> <a href="#">Home</a> </li>
-               <li><a href="#about">About </a> </li>
-               <li><a href="#work">Features</a> </li>
-               <li><a href="#contact">Price </a> </li>
-            </ul>
-         </nav>
-      </div>
-      <div id="content">
-         <!-- header -->
-         <header>
-            <!-- header inner -->
-            <div class="header">
-               <div class="container-fluid">
-                  <div class="row">
-                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
-                        <div class="full">
-                           <div class="center-desk">
-                              <div class="logo">
-                                 <a href="index.html">
-                                    <!-- <img src="images/logo.png" alt="#" /> -->
-                                 <h2 class="down_btn">DanitiesTech</h2>
-                                 </a>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
-                        <ul class="btn">
-                           <li class="down_btn"><a href="mailto:luka316daniel@gmail.com ? subject = Mail from URL Shortener">Email Me</a></li>                     
-                           <li><button type="button" id="sidebarCollapse">
-                              <img src="images/menu_icon.png" alt="#" />
-                              </button>
-                           </li>
-                        </ul>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </header>
-         <!-- end header inner -->
-         <!-- end header -->
-         <!-- banner -->
-         <div id="myCarousel" class="carousel slide banner_main" data-ride="carousel">
-            <div class="carousel-inner">
-               <div class="carousel-item active">
-                  <div class="container-fluid">
-                     <div class="carousel-caption">
-                        <div class="row">
-                           <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12">
-                              <div class="text-bg">
-                                 <h1>Paste the URL to be shortened</h1>                                 
-                              </div>
-                              <form class="bottom_form form" id="form">
-                                 <input class="enter" placeholder="Enter Your Link" type="link" name="url" value="" id="url">
-                                 <div class="error"></div>
-                                 <button type="submit" class="text-btn">Shorten URL</button>
-                              </form>
-                              <p class="text-bg-p">URL ShorTit is a free tool to shorten URLs and generate short links
-                                 Our URL shortener allows to create a shortened link making it easy to share</p>
-                                 <div class="link-wrapper">
-                                    <!-- loader  -->
-                                        <div class="loader_bg">
-                                        <div class="loader"><img src="images/loading.gif" alt="#" /></div>
-                                                   </div>
-                                    <h3 class="link-text">Shorten Link</h3>
-                                    <!-- <div class="short-link"></div> -->
-                                    <p class="text-bg-p">URL has been successfully shortened. Click on the link to copy></p>
-                                    <input type="text" value="" class="short-link" />
-                                    <div class="error"></div>
-                                </div>
-                           </div>
-                        </div>
-                       
-                     </div>
-                  </div>
-                  
-               </div>
-            </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1" />
+
+  <title>Link ShortIt</title>
+
+  <!-- Loading third party fonts -->
+  <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css" />
+  <link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
+  <!-- Loading main css file -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!--[if lt IE 9]>
+      <script src="js/ie-support/html5.js"></script>
+      <script src="js/ie-support/respond.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <div class="site-content">
+    <header class="hero" data-bg-image="images/banner.jpg">
+      <div class="container">
+        <a href="#" class="branding"><img src="images/logo.png" alt="Start-up" /></a>
+        <div class="hero-content">
+          <h1>
+            Easy way to Shortened your Links <br /><strong>Simple and seamless</strong>
+          </h1>
+        </div>
+
+        <form class="subscribe-form" id="form">
+          <input class="enter" value="" id="url" type="link" name='url' placeholder="Enter your link..." />
+         <!-- <input type="text" value="" class="short-link" /> -->
+          <div class="error"></div>
+          <input class="text-btn" type="submit" value="Shorten Link" />
+        </form>
+        <p class="text-bg-p"><h2>Link ShorTit is a free tool to shorten Links and generate short links
+          Our LINK shortener allows to create a shortened link making it easy to share</h2></p>
+        <div class="link-wrapper">
           
-         </div>
-         <!-- end banner -->
-         <!-- about -->
-         <div id="about"  class="about">
-            <div class="container-fluid">
-               <div class="row d_flex">
-                  <div class="col-md-5">
-                     <div class="about_img">
-                        <figure><img src="images/about_img.jpg" alt="#"/></figure>
-                     </div>
-                  </div>
-                  <div class="col-md-7">
-                     <div class="titlepage">
-                        <h2>About <span class="blu">URL SHORTit</span></h2>
-                        <p>URL SHORTit allows to shorten long links from Instagram, Facebook, YouTube, Twitter, Linked In, WhatsApp, TikTok, blogs and sites. Just paste the long URL and click the Shorten URL button. On the next page, copy the shortened URL and share it on sites, chat and emails. After shortening the URL, check how many clicks it received.</p>
-                        <a class="read_more">Read More</a>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <!-- end about -->
-        
-         <!-- work -->
-         <div id="work"  class="work">
-            <div class="container-fluid">
-               <div class="row d_flex">
-                  <div class="col-md-7">
-                     <div class="titlepage">
-                        <h2>How it <span class="blu">Works</span></h2>
-                        <p>Your shortened URLs can be used in publications, documents, advertisements, blogs, forums, instant messages, and other locations. Track statistics for your business and projects by monitoring the number of hits from your URL with our click counter.</p>
-                        <a class="read_more">Read More</a>
-                     </div>
-                  </div>
-                  <div class="col-md-5">
-                     <div class="work_img">
-                        <figure><img src="images/work_img.jpg" alt="#"/></figure>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      
-         <footer>
-            <div class="footer">
-               <div class="container">
-                  <div class="row">
-                     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
-                        <div class="row">
-                           <div class="col-md-8 col-sm-6">
-                              <div class="address">
-                                 <h3>Address </h3>
-                              </div>
-                                 <div class="email">luka316daniel@gmail.com</div>
-                           </div>
-                           <div class="col-md-4 col-sm-6">
-                              <div class="address">
-                                 <h3>Links</h3>
-                                 <ul class="Menu_footer">
-                                    <li class="active"> <a href="#">Home</a> </li>
-                                    <li><a href="#about">About </a> </li>
-                                    <li><a href="#work">Work</a> </li>
-                                    <li><a href="#contact">Contact </a> </li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
-                        <div class="row">
-                           <div class="col-md-5 col-sm-6">
-                              <div class="address">
-                                 <h3>Follow Us</h3>
-                              </div>
-                              <ul class="social_icon">
-                                 <li><a href="#"> Twitter<i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                 <li><a href="#"> Linkedin<i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-                              </ul>
-                           </div>
-                           <div class="col-md-7 col-sm-6">
-                              <div class="address">
-                                 <h3>Newsletter </h3>
-                              </div>
-                              <form class="bottom_form">
-                                 <input class="enter" placeholder="Enter Your Email" type="text" name="Enter Your Email">
-                                 <button class="sub_btn">subscribe</button>
-                              </form>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="copyright">
-                  <div class="container">
-                     <div class="row">
-                        <div class="col-md-12">
-                           <p>Copyright 2023 All Right Reserved By <a href="https://danitiestech.com/"> Danitiestech</a></p>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </footer>
-         <!-- end footer -->
+          <h3 class="link-text">Shorten Link</h3>
+          <!-- <div class="short-link"></div> -->
+          <p class="text-bg-p">Your Link has been successfully shortened. Click on the link to copy></p>
+          <input type="text" value="" class="short-link" />
+          <div class="error"></div>
+        </div>
+
       </div>
-      <div class="overlay"></div>
-      <!-- Javascript files-->
-      <script src="js/jquery.min.js"></script>
-      <script src="js/popper.min.js"></script>
-      <script src="js/bootstrap.bundle.min.js"></script>
-      <script src="js/jquery-3.0.0.min.js"></script>
-      <!-- sidebar -->
-      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-      <script src="js/custom.js"></script>
-      <script type="text/javascript">
-         $(document).ready(function() {
-             $("#sidebar").mCustomScrollbar({
-                 theme: "minimal"
-             });
-         
-             $('#dismiss, .overlay').on('click', function() {
-                 $('#sidebar').removeClass('active');
-                 $('.overlay').removeClass('active');
-             });
-         
-             $('#sidebarCollapse').on('click', function() {
-                 $('#sidebar').addClass('active');
-                 $('.overlay').addClass('active');
-                 $('.collapse.in').toggleClass('in');
-                 $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-             });
-         });
-      </script>
-      <script>
-         $(document).ready(function() {
-             $(".fancybox").fancybox({
-                 openEffect: "none",
-                 closeEffect: "none"
-             });
-         
-             $(".zoom").hover(function() {
-         
-                 $(this).addClass('transition');
-             }, function() {
-         
-                 $(this).removeClass('transition');
-             });
-         });
-      </script>
-      <script>
-         // This example adds a marker to indicate the position of Bondi Beach in Sydney,
-         // Australia.
-         function initMap() {
-           var map = new google.maps.Map(document.getElementById('map'), {
-             zoom: 11,
-             center: {
-               lat: 40.645037,
-               lng: -73.880224
-             },
-           });
-         
-           var image = 'images/maps-and-flags.png';
-           var beachMarker = new google.maps.Marker({
-             position: {
-               lat: 40.645037,
-               lng: -73.880224
-             },
-             map: map,
-             icon: image
-           });
-         }
-      </script>
-      <!-- google map js -->
-      <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8eaHt9Dh5H57Zh0xVTqxVdBFCvFMqFjQ&callback=initMap"></script> -->
-      <!-- end google map js -->
-      <script src="./index.js"></script>
-   </body>
+    </header>
+    <!-- hero -->
+
+    <main class="main-content">
+      <div class="fullwidth-block">
+        <div class="container">
+          <h2 class="section-title">
+            One <strong> Short link</strong> with infinite possibilities
+          </h2>
+          <small class="section-subtitle">
+            "Streamline links, boost engagement, and track performance with
+            our user-friendly URL shortener. Simplify sharing and enhance your
+            online presence today!"
+          </small>
+        </div>
+        <!-- .container -->
+      </div>
+      <!-- .fullwidth-block -->
+
+      <div class="fullwidth-block">
+        <div class="container">
+          <h2 class="section-title">
+            A few features of <strong>ShortIt</strong>
+          </h2>
+          <small class="section-subtitle"><strong>Short, Simple and seamless</strong></small>
+
+          <div class="row">
+            <div class="col-md-3 col-sm-6">
+              <div class="feature">
+                <div class="feature-icon">
+                  <img src="images/icon-pie-chart.png" alt="" class="icon" />
+                </div>
+                <h3 class="feature-title">Shorten</h3>
+                <p>Start shortening your URLs for free!</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="feature">
+                <div class="feature-icon">
+                  <img src="images/icon-mobile.png" alt="" class="icon" />
+                </div>
+                <h3 class="feature-title">Simplify</h3>
+                <p>Simplify your links with our easy-to-use tool.</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="feature">
+                <div class="feature-icon">
+                  <img src="images/icon-piggy-bank.png" alt="" class="icon" />
+                </div>
+                <h3 class="feature-title">Optimize</h3>
+                <p>Optimize your sharing with compact links.</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="feature">
+                <div class="feature-icon">
+                  <img src="images/icon-lock.png" alt="" class="icon" />
+                </div>
+                <h3 class="feature-title">Personalize</h3>
+                <p>Personalize your links for better brand representation.</p>
+              </div>
+            </div>
+          </div>
+          <!-- .row -->
+        </div>
+        <!-- .container -->
+      </div>
+      <!-- .fullwidth-block -->
+
+      <!-- <div class="fullwidth-block">
+          <div class="container">
+            <h2 class="section-title">Fit pricing to your needs</h2>
+            <small class="section-subtitle"
+              >Labore magnam quaerat voluptatem</small
+            >
+
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="pricing">
+                  <div class="pricing-header">
+                    <h3 class="pricing-title">Basic Package</h3>
+                    <div class="price">
+                      <span class="num"
+                        ><sup>$</sup>49<small>/ per year</small></span
+                      >
+                    </div>
+                  </div>
+                  <div class="pricing-checklist">
+                    <ul>
+                      <li class="check">Voluptatem accusantium</li>
+                      <li class="check">Doloremque laudantium totam</li>
+                      <li class="check">Aperiam eaque ipsa quae</li>
+                      <li>Inventore veritatis architecto</li>
+                      <li>Beatae vitae dicta explicabo</li>
+                      <li>Ipsam voluptatem quia voluptas</li>
+                      <li>Aspernatur aut odit aut fugit</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="pricing featured">
+                  <div class="pricing-header">
+                    <h3 class="pricing-title">Medium Package</h3>
+                    <div class="price">
+                      <span class="num"
+                        ><sup>$</sup>99<small>/ per year</small></span
+                      >
+                    </div>
+                  </div>
+                  <div class="pricing-checklist">
+                    <ul>
+                      <li class="check">Voluptatem accusantium</li>
+                      <li class="check">Doloremque laudantium totam</li>
+                      <li class="check">Aperiam eaque ipsa quae</li>
+                      <li class="check">Inventore veritatis architecto</li>
+                      <li class="check">Beatae vitae dicta explicabo</li>
+                      <li>Ipsam voluptatem quia voluptas</li>
+                      <li>Aspernatur aut odit aut fugit</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="pricing">
+                  <div class="pricing-header">
+                    <h3 class="pricing-title">Professional Package</h3>
+                    <div class="price">
+                      <span class="num"
+                        ><sup>$</sup>199<small>/ per year</small></span
+                      >
+                    </div>
+                  </div>
+                  <div class="pricing-checklist">
+                    <ul>
+                      <li class="check">Voluptatem accusantium</li>
+                      <li class="check">Doloremque laudantium totam</li>
+                      <li class="check">Aperiam eaque ipsa quae</li>
+                      <li class="check">Inventore veritatis architecto</li>
+                      <li class="check">Beatae vitae dicta explicabo</li>
+                      <li class="check">Ipsam voluptatem quia voluptas</li>
+                      <li class="check">Aspernatur aut odit aut fugit</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- .row -->
+  </div>
+  <!-- .container -->
+  </div> -->
+  <!-- .fullwidth-block -->
+
+  <!-- <div class="fullwidth-block" data-bg-color="#e6e6e6">
+          <div class="container">
+            <h2 class="section-title">Frequently asked questions</h2>
+            <small class="section-subtitle"
+              >Laboriosam nisi aliquid commodi dolor</small
+            >
+
+            <div class="row">
+              <div class="col-md-4">
+                <dl>
+                  <dt>Excepteur sint occaecat cupidatat?</dt>
+                  <dd>
+                    Natus error voluptatem doloremque laudantium totam rem
+                    aperiam, eaque ipsa quae inventore veritatis et quasi
+                    architecto beatae vitae dicta explicabo. Nemo enim ipsam
+                    voluptatem quia voluptas sit aspernatur aut odit
+                    consequuntur.
+                  </dd>
+
+                  <dt>Excepteur sint occaecat cupidatat?</dt>
+                  <dd>
+                    Natus error voluptatem doloremque laudantium totam rem
+                    aperiam, eaque ipsa quae inventore veritatis et quasi
+                    architecto beatae vitae dicta explicabo. Nemo enim ipsam
+                    voluptatem quia voluptas sit aspernatur aut odit
+                    consequuntur.
+                  </dd>
+                </dl>
+              </div>
+              <div class="col-md-4">
+                <dl>
+                  <dt>Excepteur sint occaecat cupidatat?</dt>
+                  <dd>
+                    Natus error voluptatem doloremque laudantium totam rem
+                    aperiam, eaque ipsa quae inventore veritatis et quasi
+                    architecto beatae vitae dicta explicabo. Nemo enim ipsam
+                    voluptatem quia voluptas sit aspernatur aut odit
+                    consequuntur.
+                  </dd>
+
+                  <dt>Excepteur sint occaecat cupidatat?</dt>
+                  <dd>
+                    Natus error voluptatem doloremque laudantium totam rem
+                    aperiam, eaque ipsa quae inventore veritatis et quasi
+                    architecto beatae vitae dicta explicabo. Nemo enim ipsam
+                    voluptatem quia voluptas sit aspernatur aut odit
+                    consequuntur.
+                  </dd>
+                </dl>
+              </div>
+              <div class="col-md-4">
+                <dl>
+                  <dt>Excepteur sint occaecat cupidatat?</dt>
+                  <dd>
+                    Natus error voluptatem doloremque laudantium totam rem
+                    aperiam, eaque ipsa quae inventore veritatis et quasi
+                    architecto beatae vitae dicta explicabo. Nemo enim ipsam
+                    voluptatem quia voluptas sit aspernatur aut odit
+                    consequuntur.
+                  </dd>
+
+                  <dt>Excepteur sint occaecat cupidatat?</dt>
+                  <dd>
+                    Natus error voluptatem doloremque laudantium totam rem
+                    aperiam, eaque ipsa quae inventore veritatis et quasi
+                    architecto beatae vitae dicta explicabo. Nemo enim ipsam
+                    voluptatem quia voluptas sit aspernatur aut odit
+                    consequuntur.
+                  </dd>
+                </dl>
+              </div>
+            </div>
+            <!-- .row -->
+  </div>
+  <!-- .container -->
+  </div>
+  .fullwidth-block -->
+
+  </main>
+  <!-- .main-content -->
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>
+        Copyright 2023 by DanitiesTech, Designed by Danities Ichaba. All rights
+        reserved
+      </p>
+
+      <div class="social-links">
+        <a href="https://web.facebook.com/danitiestech" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/danitiestech" class="twitter"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/company/74871636/admin/feed/posts/" class="google-plus"><i class="fa fa-linkedin-square"></i></a>
+        
+      </div>
+    </div>
+  </footer>
+  </div>
+
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/app.js"></script>
+  <script src="./index.js"></script>
+</body>
+
 </html>

@@ -4,8 +4,7 @@ const form = document.getElementById("form");
 const errorDiv = document.querySelector(".error");
 const linkWrapper = document.querySelector(".link-wrapper");
 const shortenedLink = document.querySelector(".short-link");
-const title = document.querySelector(".hero-content");
-const textButton = document.querySelector(".text-btn");
+const title = document.querySelector(".titleText");
 
 // const copyLink = document.querySelector(".short-link2")
 
@@ -39,16 +38,13 @@ const handleSubmit = async () => {
   }
   if (response.type == "success") {
     // copyLink.style.display = "none"
-    textButton.style.display = "none";
     formInput.style.opacity = 1;
     formInput.style.scale = 1;
     formInput.style.display = "flex";
     formInput.value = response.message;
     formInput.style.color = "#FF0000";
-    title.style.color = "#00000";
-    title.style.marginBottom = "30px";
-    title.innerHTML =
-      "<h1>Here is your Shortened Link...</h1> <p><h3>Copy the shortened link and share it in messages, texts, posts, websites and other locations.</h3></p>";
+    title.style.color = "#dc3545";
+    title.innerHTML = "click to copy your shortened link";
     // console.log("This is the error: ", formInput.value);
   }
 };
@@ -67,13 +63,12 @@ form.addEventListener("submit", (event) => {
   handleSubmit();
   clearFields();
 });
-
-// formInput.addEventListener("click", (event) => {
-//   event.preventDefault();
-//   formInput.focus();
-//   formInput.select();
-//   formInput.setSelectionRange(0, 99999);
-//   // Copy the text inside the text field
-//   navigator.clipboard.writeText(formInput.value);
-//   alert("Copied the text: " + formInput.value);
-// });
+shortenedLink.addEventListener("click", (event) => {
+  event.preventDefault();
+  shortenedLink.focus();
+  shortenedLink.select();
+  shortenedLink.setSelectionRange(0, 99999);
+  // Copy the text inside the text field
+  navigator.clipboard.writeText(shortenedLink.value);
+  alert("Copied the text: " + shortenedLink.value);
+});
