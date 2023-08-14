@@ -254,7 +254,7 @@ form textarea {
  * Reusable Components Style
  */
 .button, form input[type="submit"], form button, form input[type="reset"] {
-  background: #c208b2;
+  background: #4a7cd5;
   border: none;
   padding: 10px;
   border-radius: 5px;
