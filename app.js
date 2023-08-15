@@ -13,7 +13,7 @@ const _dirname = path.resolve();
 dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT || 7777;
+const PORT = process.env.PORT || 1000;
 
 app.use(cors());
 app.use(express.json());
@@ -27,7 +27,7 @@ app.use(express.static(_dirname + "/public"));
 
 //routes
 app.get("/", (req, res) => {
-  res.sendfile(_dirname + "/public/index");
+  res.sendFile(_dirname + "/public/index");
 });
 
 //validateURL check if the inputed string is a URL(it validates if a string is a URL)
