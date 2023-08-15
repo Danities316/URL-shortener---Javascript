@@ -29,14 +29,12 @@ const handleSubmit = async () => {
   }).then((res) => res.json());
   //   console.log(response);
   if (response.type == "failure") {
+    textButton.style.display = "none";
     formInput.style.border = "2px solid red";
-    errorDiv.textContent = `${response.message}, please try another one!`;
-    errorDiv.style.display = "inline-block;";
-    errorDiv.style.border = "2px solid red";
-    errorDiv.style.backgroundColor = "blue";
-    errorDiv.style.fontWeight = "600";
-    errorDiv.style.padding = "5px";
-    errorDiv.style.marginLeft = "200px";
+    formInput.value = `${response.message}, please try another one!`;
+    formInput.style.border = "2px solid red";
+    title.innerHTML = "<h1>Invalid Link...</h1>";
+    title.style.color = "red";
   }
   if (response.type == "success") {
     // copyLink.style.display = "none"
