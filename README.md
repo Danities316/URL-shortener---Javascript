@@ -27,11 +27,13 @@ My challenge was to build out this url shortener app in order to understand hash
 - Got to use the url-exist npm for the first, even though it is a straight forward module, it was tasking
 
 ## ScreenShot
-![ss](https://user-images.githubusercontent.com/12422620/236650566-bafc3721-98aa-4a96-a1ef-b48cda89a5ea.png)
+![Screen Shot 2023-08-15 at 11 14 37 AM](https://github.com/Danities316/URL-shortener---Javascript/assets/12422620/eb54f9b5-d9cc-4c21-a12d-d0aed9112d9d)
+
 
 ## ScreenShot Result
+![Screen Shot 2023-08-15 at 11 14 51 AM](https://github.com/Danities316/URL-shortener---Javascript/assets/12422620/1e930abd-6c4e-438a-9582-f8eccc35d12a)
 
-![ss2](https://user-images.githubusercontent.com/12422620/236650578-7eb5d66d-3e51-4fcf-9c8f-90cf875dd241.png)
+
 
 
 ### Links
