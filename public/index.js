@@ -14,7 +14,8 @@ const handleSubmit = async () => {
   let url = document.querySelector("#url");
   url = url.value;
 
-  const fetchEndpoint = process.env.PORT + "/link";
+  const fetchEndpoint =
+    `https://urlshortener-6fvo.onrender.com/link` || process.env.PORT + "/link";
   console.log("The new URL is: ", fetchEndpoint);
 
   // "https://urlshortener-6fvo.onrender.com/index_url.html"
